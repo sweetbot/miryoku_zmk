@@ -1,0 +1,15 @@
+# Copyright 2022 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Test All Xiao Shields'
+on: workflow_dispatch
+jobs:
+  build:
+    if: github.repository_owner == 'sweetbot'
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["seeeduino_xiao"]'
+      shield: '[
+        "hummingbird"
+      ]'
