@@ -5,7 +5,7 @@ name: 'Test All Xiao Controllers'
 on: workflow_dispatch
 jobs:
   build:
-    if: github.repository_owner == 'manna-harbour'
+    if: github.repository_owner == 'sweetbot'
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
